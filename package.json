@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nyc --reporter=html --reporter=xml --reporter=text mocha --timeout=3000",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-	"test-jenkins": "mocha --colors --reporter mocha-jenkins-reporter"
+    "test-jenkins": "mocha --colors --reporter mocha-jenkins-reporter"
   },
   "keywords": [],
   "author": "",

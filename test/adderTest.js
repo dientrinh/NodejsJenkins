@@ -22,5 +22,10 @@ describe("adder tests ", function() {
         var result = adder.add(_numberA, _numberB);
 		assert.equal(result, undefined);
     });
-
+    it("should return undefined for numberA equals 6", function() {
+        _numberA = 4;
+        _numberB = 2;
+        var result = adder.add(_numberA, _numberB);
+		assert.equal(result, 6);
+    });
 });
