@@ -23,11 +23,4 @@ describe("adder tests ", function() {
         expect(result).toEqual(undefined);
     });
 
-    it("should return undefined for numberB equals 0", function() {
-        _numberA = 2;
-        _numberB = 0;
-        var result = adder.add(_numberA, _numberB);
-
-        expect(result).toEqual(undefined);
-    });
 });
