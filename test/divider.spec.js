@@ -12,7 +12,7 @@ describe("divider tests ", function() {
         _numberA = 6;
         _numberB = 2;
         var result = divider.divide(_numberA, _numberB);
-		assert.equal(result, 3);
+		assert.equal(result, 3); 
     });
 
     it("should return undefined for numberA equals 0", function() {
