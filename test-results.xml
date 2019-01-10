@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-01-10T08:05:28" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="adder tests " timestamp="2019-01-10T08:05:28" tests="2" file="C:\Users\trinhdd\Desktop\Desktop\Lex\test\nodejs\test\adderTest.js" failures="0" time="0">
+    <testcase name="adder tests  should return numberA pulse numberB" time="0" classname="should return numberA pulse numberB">
+    </testcase>
+    <testcase name="adder tests  should return undefined for numberA equals 0" time="0" classname="should return undefined for numberA equals 0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Basic Mocha String Test" timestamp="2019-01-10T08:05:28" tests="2" file="C:\Users\trinhdd\Desktop\Desktop\Lex\test\nodejs\test\test.js" failures="0" time="0">
+    <testcase name="Basic Mocha String Test should return number of charachters in a string" time="0" classname="should return number of charachters in a string">
+    </testcase>
+    <testcase name="Basic Mocha String Test should return first charachter of the string" time="0" classname="should return first charachter of the string">
+    </testcase>
+  </testsuite>
+</testsuites>

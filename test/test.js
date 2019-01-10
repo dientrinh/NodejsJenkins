@@ -1,27 +1,10 @@
-var supertest = require("supertest");
-var should = require("should");
-
-// This agent refers to PORT where the program is running.
-
-var server = supertest.agent("http://localhost:4000");
-
-// UNIT test begin
-
-describe("SAMPLE unit test",function(){
-
-  // #1 should return home page
-  it("should return home page",function(done){
-    // calling home page
-	var getstatus=200;
-    server
-    .get("/")
-    .expect("Content-type",/text/)
-    .expect(200) // THis is HTTP response
-    .end(function(err,res){
-      // HTTP status should be 200
-      getstatus.should.equal(200);
-      done();
+var assert = require('assert');
+describe('Basic Mocha String Test', function () {
+ it('should return number of charachters in a string', function () {
+        assert.equal("Hello".length, 5);
     });
-  });
-
+ it('should return first charachter of the string', function () {
+        assert.equal("Hello".charAt(0), 'H');
+        //throw {myError:'throwing error to fail test'}
+    });
 });

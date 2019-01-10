@@ -1,26 +1,27 @@
 {
-  "name": "istanbul-code-coverage-example",
+  "name": "nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "jasmine",
-    "test-cover": "istanbul cover --include-all-sources spec/specs.js && istanbul check-coverage"
+    "test": "nyc --reporter=html --reporter=xml --reporter=text mocha --timeout=3000",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+	"test-jenkins": "mocha --colors --reporter mocha-jenkins-reporter"
   },
-  "keywords": [
-    "istanbul"
-  ],
-  "author": "Tal Kaminsky",
-  "license": "MIT",
-  "devDependencies": {
-    "jasmine": "^2.8.0",
-    "jasmine-node": "^1.14.5",
-    "istanbul": "^0.4.5",
-    "jasmine-console-reporter": "^2.0.1",
-    "supertest": "^3.0.0",
-    "jasmine-supertest": "^1.0.0"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mocha-jenkins-reporter": "^0.4.1",
+    "mocha-junit-reporter": "^1.18.0",
+    "nyc": "^13.1.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
   }
 }
